@@ -1,0 +1,58 @@
+[
+  {
+    "description": "  Feature Description",
+    "keyword": "Feature",
+    "name": "Write A",
+    "line": 1,
+    "id": "write-a",
+    "tags": [],
+    "uri": "features/search.feature",
+    "elements": [
+      {
+        "id": "write-a;open-rotation-wizard",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Open Rotation Wizard",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "The browser is open",
+            "match": {
+              "location": "features/step_definitions/stepDefinitions.js:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 971000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I open the login page",
+            "match": {
+              "location": "features/step_definitions/stepDefinitions.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1678000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "I write nnnn in the field .js-session-form #user_email",
+            "result": {
+              "status": "undefined"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
