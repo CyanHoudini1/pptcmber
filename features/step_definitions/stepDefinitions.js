@@ -19,7 +19,7 @@ When('I open the rotation wizard', async function(){
     await this.page.goto("https://shyf-8539.app.sppt-beta.com/rotation-wizard")
 });
 
-When('I write {string} into the field .js-session-form #user_email', async function(){
+When('I write {string} into the field {string}', async function(){
     await this.page.click(USERNAME_SELECTOR);
     await this.page.keyboard.type({string});
 });
