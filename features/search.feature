@@ -3,5 +3,5 @@ Feature: Write A
   Scenario: Open Rotation Wizard
     Given The browser is open
     When I log into the beta
-
-    
+    When I open the rotation wizard
+    When I enter Rotation as name

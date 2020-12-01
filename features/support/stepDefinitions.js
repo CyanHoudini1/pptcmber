@@ -26,11 +26,13 @@ When('I log into the beta', async function () {
 });
 
 When('I open the rotation wizard', async function(){
-    await this.page.goto("https://shyf-8539.app.sppt-beta.com/login")
+    await this.page.goto("https://feat-8274-shift-rotations.app.sppt-beta.com/rotation-wizard")
 });
 
-When('I write {string} into the field {string}', async function(){
-    await this.page.click(USERNAME_SELECTOR);
-    await this.page.keyboard.type({string});
+When('I enter {string} as name', async function(){
+    await this.page.waitForSelector('rotationName');
+    await this.page.type('rotationName', {string});
+    this.sel = await this.page.waitForSelector('#general-setup-form > div:nth-child(2) > div > div:nth-child(3) > button');
+    await this.page.click(sel);
 });
 
