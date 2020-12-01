@@ -22,33 +22,24 @@
             "line": 4,
             "name": "The browser is open",
             "match": {
-              "location": "features/step_definitions/stepDefinitions.js:9"
+              "location": "features/support/stepDefinitions.js:14"
             },
             "result": {
               "status": "passed",
-              "duration": 1722000000
+              "duration": 3078000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 5,
-            "name": "I open the login page",
+            "name": "I log into the beta",
             "match": {
-              "location": "features/step_definitions/stepDefinitions.js:14"
+              "location": "features/support/stepDefinitions.js:20"
             },
             "result": {
               "status": "passed",
-              "duration": 3075000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 6,
-            "name": "I write nnnn in the field .js-session-form #user_email",
-            "result": {
-              "status": "undefined"
+              "duration": 1943000000
             }
           }
         ]
