@@ -1,33 +1,24 @@
-import { expect } from "chai";
-import { setWorldConstructor, setDefaultTimeout } from "cucumber";
-import puppeteer from "puppeteer";
+
 
 const HEADLESS = process.env.HEADLESS !== "false";
 const USERNAME = "nils+beta@shyftplan.com";
 const PASSWORD = "123456789";
 
-class WizardWorld {
 
-    async function amountOfGroups (amount) {
-
+    async function amountOfGroups (amountGroups){
     await this.page.waitForSelector('#general-setup-form > div:nth-child(2) > div > div:nth-child(3) > button');
-    for(let i=0; i <= {int}; i++){
+    for(let i=0; i <= {amountGroups}; i++){
     await this.page.click('#general-setup-form > div:nth-child(2) > div > div:nth-child(3) > button');
         }
-    }
+    };
 
-    async function amountOfWeeks (amount){
+    async function  amountOfWeeks (amountWeeks){
     await this.page.waitForSelector('#general-setup-form > div:nth-child(3) > div > div:nth-child(3) > button');
-    for(let i=0; i <= {int}; i++){
+    for(let i=0; i <= {amountWeeks}; i++){
     await this.page.click('#general-setup-form > div:nth-child(3) > div > div:nth-child(3) > button');
         }
     }
 
-    async function enterAnchorDate (day,month,year){
+    async function  enterAnchorDate(day,month,year) {
         
-    }
-
-};
-}
-
-setWorldConstructor(WizardWorld);
+    };

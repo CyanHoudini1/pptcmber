@@ -4,11 +4,14 @@ const puppeteer = require("puppeteer")
 
 var {setDefaultTimeout} = require('cucumber');
 setDefaultTimeout(60 * 1000);
-const USERNAME_SELECTOR = '.js-session-form #user_email';
 const HEADLESS = process.env.HEADLESS !== "false";
 const USERNAME = "nils+beta@shyftplan.com";
 const PASSWORD = "123456789";
 const PAGE = 'https://shyf-8402.sppt-beta.com/login'
+const {
+    amountOfGroups,
+    amountOfWeeks,
+    enterAnchorDate} = require('./world.js');
 let page;
 
 Given("The browser is open", async function(){
