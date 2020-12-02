@@ -1,3 +1,6 @@
+import { expect } from "chai";
+import { setWorldConstructor, setDefaultTimeout } from "cucumber";
+import puppeteer from "puppeteer";
 
 const HEADLESS = process.env.HEADLESS !== "false";
 const USERNAME = "nils+beta@shyftplan.com";
@@ -5,14 +8,26 @@ const PASSWORD = "123456789";
 
 class WizardWorld {
 
-    async logIn() {
-    await this.page.goto("https://shyf-8539.app.sppt-beta.com/login")
-    this.inputElement = await page.waitForSelector('#new_user #user_email');
-    await page.click('#new_user #user_email');
-    await this.inputElement.type(USERNAME);
-    this.inputElement = await page.waitForSelector('#user_password')
-    await this.inputElement.type(PASSWORD);
-    await page.click('commit');
+    async function amountOfGroups (amount) {
+
+    await this.page.waitForSelector('#general-setup-form > div:nth-child(2) > div > div:nth-child(3) > button');
+    for(let i=0; i <= {int}; i++){
+    await this.page.click('#general-setup-form > div:nth-child(2) > div > div:nth-child(3) > button');
+        }
+    }
+
+    async function amountOfWeeks (amount){
+    await this.page.waitForSelector('#general-setup-form > div:nth-child(3) > div > div:nth-child(3) > button');
+    for(let i=0; i <= {int}; i++){
+    await this.page.click('#general-setup-form > div:nth-child(3) > div > div:nth-child(3) > button');
+        }
+    }
+
+    async function enterAnchorDate (day,month,year){
+        
     }
 
 };
+}
+
+setWorldConstructor(WizardWorld);

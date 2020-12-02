@@ -8,7 +8,7 @@ const USERNAME_SELECTOR = '.js-session-form #user_email';
 const HEADLESS = process.env.HEADLESS !== "false";
 const USERNAME = "nils+beta@shyftplan.com";
 const PASSWORD = "123456789";
-const PAGE = 'https://master.sppt-beta.com/login'
+const PAGE = 'https://shyf-8402.sppt-beta.com/login'
 let page;
 
 Given("The browser is open", async function(){
@@ -29,10 +29,13 @@ When('I open the rotation wizard', async function(){
     await this.page.goto("https://feat-8274-shift-rotations.app.sppt-beta.com/rotation-wizard")
 });
 
-When('I enter {string} as name', async function(){
-    await this.page.waitForSelector('rotationName');
-    await this.page.type('rotationName', {string});
-    this.sel = await this.page.waitForSelector('#general-setup-form > div:nth-child(2) > div > div:nth-child(3) > button');
-    await this.page.click(sel);
+When('I enter Rotation as name', async function(){
+    await this.page.waitForSelector('#rotationName');
+    await this.page.type('#rotationName', 'Rotation');
 });
 
+When('I click Group Number {int} times', amountOfGroups);
+
+When('I click Week Number {int} times', amountOfWeeks);
+
+When('I enter the anchor date {int}.{int}.{int}', enterAnchorDate);

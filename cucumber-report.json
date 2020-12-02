@@ -26,7 +26,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 8381000000
+              "duration": 5071000000
             }
           },
           {
@@ -39,7 +39,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 4979000000
+              "duration": 1934000000
             }
           },
           {
@@ -52,7 +52,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3591000000
+              "duration": 3987000000
             }
           },
           {
@@ -60,8 +60,12 @@
             "keyword": "When ",
             "line": 7,
             "name": "I enter Rotation as name",
+            "match": {
+              "location": "features/support/stepDefinitions.js:32"
+            },
             "result": {
-              "status": "undefined"
+              "status": "passed",
+              "duration": 707000000
             }
           }
         ]
