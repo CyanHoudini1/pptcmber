@@ -37,8 +37,8 @@ When('I enter Rotation as name', async function(){
     await this.page.type('#rotationName', 'Rotation');
 });
 
-When('I click Group Number {int} times', amountOfGroups);
+When('I click Group Number {int} time(s)', async(amount) => amountOfGroups(amount));
 
-When('I click Week Number {int} times', amountOfWeeks);
+When('I click Week Number {int} time(s)', async(amount) => amountOfWeeks(amount));
 
-When('I enter the anchor date {int}.{int}.{int}', enterAnchorDate);
+When('I enter the anchor date {int}.{int}.{int}', async(day, month, year) => enterAnchorDate(day, month, year));

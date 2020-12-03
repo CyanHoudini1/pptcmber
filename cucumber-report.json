@@ -1,0 +1,84 @@
+[
+  {
+    "description": "  Feature Description",
+    "keyword": "Feature",
+    "name": "Write A",
+    "line": 1,
+    "id": "write-a",
+    "tags": [],
+    "uri": "features/search.feature",
+    "elements": [
+      {
+        "id": "write-a;open-rotation-wizard",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Open Rotation Wizard",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "The browser is open",
+            "match": {
+              "location": "features/support/stepDefinitions.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4474000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I log into the beta",
+            "match": {
+              "location": "features/support/stepDefinitions.js:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 797000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "I open the rotation wizard",
+            "match": {
+              "location": "features/support/stepDefinitions.js:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2262000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I enter Rotation as name",
+            "match": {
+              "location": "features/support/stepDefinitions.js:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 219000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "I click Group Number 2 time(s)",
+            "result": {
+              "status": "undefined"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
