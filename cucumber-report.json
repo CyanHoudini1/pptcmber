@@ -26,7 +26,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 4474000000
+              "duration": 3346000000
             }
           },
           {
@@ -39,7 +39,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 797000000
+              "duration": 891000000
             }
           },
           {
@@ -52,29 +52,72 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2262000000
+              "duration": 1710000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 7,
-            "name": "I enter Rotation as name",
+            "name": "I enter Balls as name",
             "match": {
               "location": "features/support/stepDefinitions.js:35"
             },
             "result": {
               "status": "passed",
-              "duration": 219000000
+              "duration": 140000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 8,
-            "name": "I click Group Number 2 time(s)",
+            "name": "I click Group Number 2 times",
+            "match": {
+              "location": "features/support/stepDefinitions.js:40"
+            },
             "result": {
-              "status": "undefined"
+              "status": "passed",
+              "duration": 151000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "I click Week Number 3 times",
+            "match": {
+              "location": "features/support/stepDefinitions.js:47"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 163000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "I enter the anchor date 01 01 2020",
+            "match": {
+              "location": "features/support/stepDefinitions.js:54"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 120000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "I press Finish Rotation",
+            "match": {
+              "location": "features/support/stepDefinitions.js:62"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 104000000
             }
           }
         ]

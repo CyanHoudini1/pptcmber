@@ -32,13 +32,34 @@ When('I open the rotation wizard', async function(){
     await this.page.goto("https://feat-8274-shift-rotations.app.sppt-beta.com/rotation-wizard")
 });
 
-When('I enter Rotation as name', async function(){
+When('I enter {word} as name', async function(name){
     await this.page.waitForSelector('#rotationName');
-    await this.page.type('#rotationName', 'Rotation');
+    await this.page.type('#rotationName', name);
 });
 
-When('I click Group Number {int} time(s)', async(amount) => amountOfGroups(amount));
+When('I click Group Number {int} times', async function(amountGroups){
+    await this.page.waitForSelector('#general-setup-form > div:nth-child(2) > div > div:nth-child(3) > button');
+    for(let i=0; i <= amountGroups; i++){
+        await this.page.click('#general-setup-form > div:nth-child(2) > div > div:nth-child(3) > button');
+        }
+});
 
-When('I click Week Number {int} time(s)', async(amount) => amountOfWeeks(amount));
+When('I click Week Number {int} time(s)', async function(amountWeeks){
+    await this.page.waitForSelector('#general-setup-form > div:nth-child(3) > div > div:nth-child(3) > button');
+    for(let i=0; i <= amountWeeks; i++){
+        await this.page.click('#general-setup-form > div:nth-child(3) > div > div:nth-child(3) > button');
+        }
+});
 
-When('I enter the anchor date {int}.{int}.{int}', async(day, month, year) => enterAnchorDate(day, month, year));
+When('I enter the anchor date {word} {word} {word}', async function(day, month, year){
+    await this.page.waitForSelector('#general-setup-form > div.input-text--2YerZ.input-text--calendar--YsMNB > div > label');
+    await this.page.click('#general-setup-form > div.input-text--2YerZ.input-text--calendar--YsMNB > div > label');
+    await this.page.type('#anchorDate', day);
+    await this.page.type('#anchorDate', month);
+    await this.page.type('#anchorDate', year);
+});
+
+Then('I press Finish Rotation', async function(){
+    await this.page.waitForSelector('body > div > div > div.two-column__two--E2cmM > main > div > div > div > button')
+    await this.page.click('body > div > div > div.two-column__two--E2cmM > main > div > div > div > button');
+})
