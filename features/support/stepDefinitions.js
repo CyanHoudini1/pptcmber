@@ -51,7 +51,7 @@ When('I click Week Number {int} time(s)', async function(amountWeeks){
         }
 });
 
-When('I enter the anchor date {word} {word} {word}', async function(day, month, year){
+When('I enter the anchor date {word}.{word}.{word}', async function(day, month, year){
     await this.page.waitForSelector('#general-setup-form > div.input-text--2YerZ.input-text--calendar--YsMNB > div > label');
     await this.page.click('#general-setup-form > div.input-text--2YerZ.input-text--calendar--YsMNB > div > label');
     await this.page.type('#anchorDate', day);

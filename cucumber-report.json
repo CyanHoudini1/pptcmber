@@ -26,7 +26,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3346000000
+              "duration": 2684000000
             }
           },
           {
@@ -39,7 +39,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 891000000
+              "duration": 953000000
             }
           },
           {
@@ -52,7 +52,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1710000000
+              "duration": 1268000000
             }
           },
           {
@@ -65,7 +65,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 140000000
+              "duration": 148000000
             }
           },
           {
@@ -78,7 +78,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 151000000
+              "duration": 166000000
             }
           },
           {
@@ -91,20 +91,20 @@
             },
             "result": {
               "status": "passed",
-              "duration": 163000000
+              "duration": 133000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 10,
-            "name": "I enter the anchor date 01 01 2020",
+            "name": "I enter the anchor date 01.01.2020",
             "match": {
               "location": "features/support/stepDefinitions.js:54"
             },
             "result": {
               "status": "passed",
-              "duration": 120000000
+              "duration": 127000000
             }
           },
           {
@@ -117,7 +117,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 104000000
+              "duration": 94000000
             }
           }
         ]
