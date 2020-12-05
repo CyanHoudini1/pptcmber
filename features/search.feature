@@ -5,7 +5,9 @@ Feature: Write A
     When I log into the beta
     When I open the rotation wizard
     When I enter Balls as name
-    When I click Group Number 2 times
-    When I click Week Number 3 times
+    When I click Group Number 0 times
+    When I click Week Number 0 times
     When I enter the anchor date 01.01.2020
-    Then I press Finish Rotation
+    When I press Finish Rotation
+    When I select Tuesday and assign a Preset
+    Then I click Add Employees

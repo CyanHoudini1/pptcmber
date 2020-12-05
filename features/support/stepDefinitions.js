@@ -59,7 +59,20 @@ When('I enter the anchor date {word}.{word}.{word}', async function(day, month, 
     await this.page.type('#anchorDate', year);
 });
 
-Then('I press Finish Rotation', async function(){
+When('I press Finish Rotation', async function(){
     await this.page.waitForSelector('body > div > div > div.two-column__two--E2cmM > main > div > div > div > button')
     await this.page.click('body > div > div > div.two-column__two--E2cmM > main > div > div > div > button');
+})
+
+When('I select Tuesday and assign a Preset', async function(){
+    await this.page.waitForSelector('div > div:nth-child(10) > button');
+    await this.page.click('div > div:nth-child(10) > button');
+    await this.page.waitForSelector(' div > div.day-cell--3Qjq2.day-cell--preset-select-open--3pCa5 > div > div.preset-select__list--1vVHo > button:nth-child(1)')
+    await this.page.waitForSelector('div.preset-select__list--1vVHo > button:nth-child(1)')
+    await this.page.click('div > div.day-cell--3Qjq2.day-cell--preset-select-open--3pCa5 > div > div.preset-select__list--1vVHo > button:nth-child(1)')
+})
+
+Then('I click Add Employees', async function(){
+   await this.page.waitForSelector('button--shyftplan-green');
+   await this.page.click('button--shyftplan-green');
 })
