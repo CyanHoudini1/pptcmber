@@ -68,11 +68,11 @@ When('I select Tuesday and assign a Preset', async function(){
     await this.page.waitForSelector('div > div:nth-child(10) > button');
     await this.page.click('div > div:nth-child(10) > button');
     await this.page.waitForSelector(' div > div.day-cell--3Qjq2.day-cell--preset-select-open--3pCa5 > div > div.preset-select__list--1vVHo > button:nth-child(1)')
-    await this.page.waitForSelector('div.preset-select__list--1vVHo > button:nth-child(1)')
-    await this.page.click('div > div.day-cell--3Qjq2.day-cell--preset-select-open--3pCa5 > div > div.preset-select__list--1vVHo > button:nth-child(1)')
+    await this.page.waitForSelector('div.preset-select__list--1vVHo > button:nth-child(2)')
+    await this.page.click('div > div.day-cell--3Qjq2.day-cell--preset-select-open--3pCa5 > div > div.preset-select__list--1vVHo > button:nth-child(2)')
 })
 
 Then('I click Add Employees', async function(){
-   await this.page.waitForSelector('button--shyftplan-green');
-   await this.page.click('button--shyftplan-green');
+   await this.page.waitForSelector('button.button--1Ts1A.button--large--1EFug.button--fill--2jsIb.button--shyftplan-green--3Xyuc')
+   await this.page.click('button.button--1Ts1A.button--large--1EFug.button--fill--2jsIb.button--shyftplan-green--3Xyuc');
 })
